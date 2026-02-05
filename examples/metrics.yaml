@@ -1,0 +1,33 @@
+metrics:
+  - name: monthly_active_users
+    description: >
+      Number of unique users who performed at least one qualifying action
+      during a calendar month.
+    grain: user_id x month
+    owner: growth_analytics
+    source_tables:
+      - events.user_activity
+    freshness_sla: 24h
+    dimensions:
+      - platform
+      - country
+    caveats:
+      - Excludes internal and test users
+      - Historical values may change due to backfills
+
+  - name: net_revenue
+    description: >
+      Total revenue after refunds, discounts, and chargebacks,
+      recognized at the time of transaction completion.
+    grain: transaction_id
+    owner: finance_analytics
+    source_tables:
+      - finance.transactions
+      - finance.refunds
+    freshness_sla: 48h
+    dimensions:
+      - region
+      - product_category
+    caveats:
+      - Does not include pending transactions
+      

@@ -1,0 +1,4 @@
+metrics:
+  - name: Daily Active Users
+    description: Users active per day
+    owner: analytics
