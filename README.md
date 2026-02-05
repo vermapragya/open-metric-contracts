@@ -2,17 +2,6 @@
 
 # Open Metric Contracts
 
-## Why Now?
-
-Analytics systems are increasingly used by:
-- executive decision-making
-- automated experimentation
-- AI and LLM-powered tools
-
-In this environment, undocumented or ambiguous metrics are no longer just confusing — they are dangerous.
-
-Metric Contracts aim to make metrics explicit, machine-readable, and trustworthy before they are consumed by humans or automated systems.
-
 > Metrics are not numbers. They are promises.
 
 **Open Metric Contracts** is a lightweight, opinionated specification for defining business metrics as *contracts* — explicit agreements between data producers, analytics teams, and business consumers.
