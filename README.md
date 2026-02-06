@@ -61,3 +61,23 @@ dimensions:
 caveats:
   - Excludes users marked as internal_test_accounts
   - Backfills may change historical values
+```
+
+---
+
+## Setup (Python)
+
+Create and activate a virtual environment, then install dependencies:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+Run validation against an example contract:
+
+```bash
+python cli.py examples/metrics.yaml
+```
