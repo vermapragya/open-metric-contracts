@@ -1,12 +1,12 @@
 import yaml
 
-from validator.result import ValidationResult
+from validator.results import ValidationResult
 from validator.rules import (
     validate_required_fields,
     validate_metric_name,
     validate_grain,
     validate_owner,
-    validate_source_tables
+    validate_source_tables,
     warn_optional_fields,
 )
 

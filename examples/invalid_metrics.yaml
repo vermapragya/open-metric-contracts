@@ -2,3 +2,6 @@ metrics:
   - name: Daily Active Users
     description: Users active per day
     owner: analytics
+    grain: daily
+    source_tables:
+      - events.user_activity
